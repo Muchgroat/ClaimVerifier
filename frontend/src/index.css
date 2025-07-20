@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import "tailwindcss";
+@layer base {
+  :root {
+    --text: #e0e9f6;
+    --background: #070e16;
+    --primary: #8db5de;
+    --secondary: #35257d;
+    --accent: #7f54cd;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  .animate-shake {
+    animation: shake 0.5s ease-in-out;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  .animate-gradient-x {
+    animation: gradientX 3s ease infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 20s linear infinite;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .font-turret-road {
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .font-inter { font-family: 'Inter', sans-serif; }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px currentColor);
+  }
+  50% {
+    opacity: 0.7;
+    filter: drop-shadow(0 0 20px currentColor);
+  }
+}
+
+@keyframes gradientX {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Custom cursor styles */
+.cursor {
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+.cursor-normal {
+  background: rgba(141, 181, 222, 0.6);
+  box-shadow: 0 0 8px rgba(141, 181, 222, 0.5);
+  border: 1px solid rgba(141, 181, 222, 0.3);
+}
+
+.cursor-hover {
+  background: rgba(127, 84, 205, 0.7);
+  box-shadow: 0 0 12px rgba(127, 84, 205, 0.6);
+  border: 1px solid rgba(127, 84, 205, 0.5);
+}
+
+/* Hide default cursor on elements that have custom cursor */
+.cursor-enabled {
+  cursor: none;
+}
+
+.cursor-enabled * {
+  cursor: none;
+}
