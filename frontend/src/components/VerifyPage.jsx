@@ -273,14 +273,14 @@ export default function VerifyPage() {
         </Card>
 
         {/* Error Display */}
-        {error && (
+        {/* {error && (
           <Alert className="max-w-5xl mx-auto bg-[#7f54cd]/15 border-[#7f54cd]/50 backdrop-blur-sm animate-shake shadow-lg shadow-[#7f54cd]/20">
             <XCircle className="h-7 w-7 text-[#7f54cd]" />
             <AlertDescription className="text-[#7f54cd] text-2xl font-semibold">
               <strong>Error:</strong> {error}
             </AlertDescription>
           </Alert>
-        )}
+        )} */}
 
         {/* Connection Error */}
         {/* {!isConnected && (
