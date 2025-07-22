@@ -184,14 +184,14 @@ export default function VerifyPage() {
             </span>
           </div> */}
 
-          {!isConnected && (
+          {/* {!isConnected && (
             <Button
               onClick={connect}
               className="bg-gradient-to-r from-[#35257d] to-[#7f54cd] hover:from-[#4a2f9e] hover:to-[#8f64dd] text-white font-semibold py-2 px-4 rounded-lg transition-all duration-200"
             >
               Connect
             </Button>
-          )}
+          )} */}
         </div>
 
         {/* Page Header */}
@@ -283,14 +283,14 @@ export default function VerifyPage() {
         )}
 
         {/* Connection Error */}
-        {!isConnected && (
+        {/* {!isConnected && (
           <Alert className="max-w-5xl mx-auto bg-[#7f54cd]/15 border-[#7f54cd]/50 backdrop-blur-sm shadow-lg shadow-[#7f54cd]/20">
             <WifiOff className="h-7 w-7 text-[#7f54cd]" />
             <AlertDescription className="text-[#7f54cd] text-2xl font-semibold">
               <strong>Connection Error:</strong> Unable to connect to verification service. Please refresh the page.
             </AlertDescription>
           </Alert>
-        )}
+        )} */}
 
         {/* Login Prompt */}
         {error === 'Please log in to verify claims' && (
