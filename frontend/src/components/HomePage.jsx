@@ -186,12 +186,13 @@ export default function HomePage() {
 
                             {/* CTA Button */}
                             <div className="pt-8 flex flex-row gap-x-4">
-                                <button
+                                <a href="#features"> 
+                                    <button
                                     onClick={() => setPage(true)}
-                                    className="px-8 py-4 bg-gradient-to-r from-[#35257d] via-[#8db5de] to-[#7f54cd] hover:from-[#8db5de] hover:via-[#7f54cd] hover:to-[#e0e9f6] text-white font-bold text-lg rounded-full transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-[#8db5de]/50"
-                                >
+                                    className="px-8 py-4 bg-gradient-to-r from-[#35257d] via-[#8db5de] to-[#7f54cd] hover:from-[#8db5de] hover:via-[#7f54cd] hover:to-[#e0e9f6] text-white font-bold text-lg rounded-full transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-[#8db5de]/50">
                                     Get Started
                                 </button>
+                                </a>
                                 <Link
                                     to="/verify"
                                     className="px-8 py-4 bg-white text-[#35257d] font-bold text-lg rounded-full border-2 border-[#8db5de] hover:bg-[#8db5de] hover:text-white transition-all duration-500 transform hover:scale-105"
